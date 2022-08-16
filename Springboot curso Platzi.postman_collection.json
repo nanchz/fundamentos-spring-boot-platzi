@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "ec56bc6a-ca2b-4c03-95a7-c4fedf28de59",
+		"name": "Springboot curso Platzi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Hernan\",\r\n    \"email\": \"hernanrmz04@gmail.com\",\r\n    \"birthDate\": \"1994-04-14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/app/api/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"app",
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pageable",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Hernan\",\r\n    \"email\": \"hernanrmz04@gmail.com\",\r\n    \"birthDate\": \"1994-04-14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/app/api/users/pageable?page=1&size=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"app",
+						"api",
+						"users",
+						"pageable"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtain List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/app/api/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"app",
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Hernan Ramirez\",\r\n    \"email\": \"hernanrmz04@gmail.com\",\r\n    \"birthDate\": \"1994-04-14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/app/api/users/14",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"app",
+						"api",
+						"users",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/app/api/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"app",
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
